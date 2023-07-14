@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lobster&family=Open+Sans:wght@500&family=Poppins:wght@500&family=Work+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+/* header styles here */
+.header-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.nav-title h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 45px;
+}
+.nav-list{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400px;
+    gap: 15px;
+    list-style: none;
+    margin-right: 45px;
+}
+/* header styles end */
+
+
+/* main section styles here  */
+
+
+/* camera container  */
+.camera-container{
+    display: flex;
+}
+/* camera text  */
+.camera-text{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.camera-title{
+    font-size: 57px;
+    font-weight: 900px;
+}
+.camera-description{
+    width: 400px;
+    font-size: 16px;
+    font-weight: 700px;
+}
+.camera-button{
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #d647ab;
+    color: white;
+}
+/* main section styles start  */
+
+/* camera images styles  */
+.camera-image-container{
+    margin-top: 20px;
+    margin-right: 55px;
+   
+}
+.camera-image-container img{
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 350px;
+    margin-top: 10px;
+   
+}
+/* logos corner styles  */
+.logos-corner{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.logos-container{
+    display: flex;
+    border-top: 2px solid #bbc1c2;
+    border-bottom: 2px solid #bbc1c2;
+    border-left: none;
+    border-right: none;
+    margin-right: 30px;
+    /* padding: 5px; */
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* popular collection stayle */
+.popular-collection{
+   
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: whitesmoke;
+}
+.popular-parent{
+   
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: white;
+    /* padding: 5px; */
+    box-shadow: 1px 2px 1px 2px gainsboro;
+}
+.collection-title{
+    text-align: center;
+}
+.collection-star{
+    color: #F7CD2E;
+}
+
+
+
+
+/* Responsiv styles Here */
+@media screen and (max-width:688px) {
+    .header-container, .nav-list{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-title{
+        display: block;
+        text-align: center;
+       } 
+    
+    .nav-title h3{
+       
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400px;
+        margin-left:15px ;
+     }
+     .nav-list li{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        background-color: aquamarine;
+        column-gap: 10px;
+        border-radius: 5px;
+     }
+     li i{
+        width: 100%;
+     }
+     /* camera text */
+     .camera-text{
+        margin-left: 10px;
+        text-align: center;
+     }
+     /* camera section */
+     .camera-container{
+        /* width: 50%; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+     }
+    /* logos corner */
+    .logos-container{
+        width: 100%;
+        border: none;
+        flex-wrap: wrap;
+        margin:5px;
+    }
+}
+   
